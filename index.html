@@ -1,0 +1,41 @@
+<!-- Fitaovana fikaroahana -->
+<div style="padding: 15px; text-align: center;">
+  <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Tadiavo ny mariky ny finday (ex: Samsung A12)..." style="width: 80%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+</div>
+
+<!-- Lisitry ny tolotra -->
+<ul id="productList" style="list-style: none; padding: 0;">
+  <li class="product-item" style="padding: 10px; border-bottom: 1px solid #eee;">Écran Samsung A12 Original - Avec Pose</li>
+  <li class="product-item" style="padding: 10px; border-bottom: 1px solid #eee;">Écran iPhone 11 Original - Avec Pose</li>
+  <li class="product-item" style="padding: 10px; border-bottom: 1px solid #eee;">Tactile Redmi Note 10 - Avec Pose</li>
+</ul>
+
+<script>
+function filterProducts() {
+  let input = document.getElementById('searchInput').value.toLowerCase();
+  let items = document.querySelectorAll('.product-item');
+  items.forEach(item => {
+    if (item.textContent.toLowerCase().includes(input)) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+</script>
+<title>Richard GSM - Vente Écran, Tactile & Réparation Mobile</title>
+<meta name="description" content="Vente écran sy tactile original ho an'ny iPhone, Samsung, Oppo, Vivo, Redmi. Pose sy installation à domicile amin'ny vidiny mora sy azo antoka.">
+<meta name="keywords" content="Richard GSM, ecran samsung, ecran iphone, reparation telephone, tactile, Madagascar">
+
+<!-- Open Graph ho an'ny Facebook sy WhatsApp -->
+<meta property="og:title" content="Richard GSM - Vente Écran & Réparation Mobile">
+<meta property="og:description" content="Écran sy Tactile Original, Pose à Domicile, Réparation Express.">
+<meta property="og:type" content="website">
+<title>Richard GSM - Vente Écran, Tactile & Réparation Mobile</title>
+<meta name="description" content="Vente écran sy tactile original ho an'ny iPhone, Samsung, Oppo, Vivo, Redmi. Pose sy installation à domicile amin'ny vidiny mora sy azo antoka.">
+<meta name="keywords" content="Richard GSM, ecran samsung, ecran iphone, reparation telephone, tactile, Madagascar">
+
+<!-- Open Graph ho an'ny Facebook sy WhatsApp -->
+<meta property="og:title" content="Richard GSM - Vente Écran & Réparation Mobile">
+<meta property="og:description" content="Écran sy Tactile Original, Pose à Domicile, Réparation Express.">
+<meta property="og:type" content="website"
