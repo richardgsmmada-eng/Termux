@@ -1,41 +1,140 @@
-<!-- Fitaovana fikaroahana -->
-<div style="padding: 15px; text-align: center;">
-  <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Tadiavo ny mariky ny finday (ex: Samsung A12)..." style="width: 80%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
-</div>
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard GSM - Vente Écran & Réparation Mobile</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .header p {
+            margin-top: 8px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .services {
+            padding: 20px;
+        }
+        .services h2 {
+            color: #007bff;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            font-size: 20px;
+        }
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services li {
+            padding: 10px 0;
+            font-size: 15px;
+        }
+        .services li i {
+            color: #28a745;
+            margin-right: 10px;
+        }
+        .contact-box {
+            background: #e9f5ff;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .contact-box p {
+            margin-top: 0;
+            font-size: 14px;
+        }
+        .btn {
+            display: block;
+            padding: 12px 20px;
+            margin: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
+        .btn-facebook {
+            background-color: #1877f2;
+        }
+        .btn-whatsapp {
+            background-color: #25d366;
+        }
+        .btn i {
+            margin-right: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
 
-<!-- Lisitry ny tolotra -->
-<ul id="productList" style="list-style: none; padding: 0;">
-  <li class="product-item" style="padding: 10px; border-bottom: 1px solid #eee;">Écran Samsung A12 Original - Avec Pose</li>
-  <li class="product-item" style="padding: 10px; border-bottom: 1px solid #eee;">Écran iPhone 11 Original - Avec Pose</li>
-  <li class="product-item" style="padding: 10px; border-bottom: 1px solid #eee;">Tactile Redmi Note 10 - Avec Pose</li>
-</ul>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <h1>RICHARD GSM</h1>
+            <p>Vente Écran, Tactile & Réparation Mobile</p>
+        </div>
 
-<script>
-function filterProducts() {
-  let input = document.getElementById('searchInput').value.toLowerCase();
-  let items = document.querySelectorAll('.product-item');
-  items.forEach(item => {
-    if (item.textContent.toLowerCase().includes(input)) {
-      item.style.display = "";
-    } else {
-      item.style.display = "none";
-    }
-  });
-}
-</script>
-<title>Richard GSM - Vente Écran, Tactile & Réparation Mobile</title>
-<meta name="description" content="Vente écran sy tactile original ho an'ny iPhone, Samsung, Oppo, Vivo, Redmi. Pose sy installation à domicile amin'ny vidiny mora sy azo antoka.">
-<meta name="keywords" content="Richard GSM, ecran samsung, ecran iphone, reparation telephone, tactile, Madagascar">
+        <!-- NOS SERVICES -->
+        <div class="services">
+            <h2>Nos Services</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Vente Écran sy Tactile Original</li>
+                <li><i class="fas fa-check-circle"></i> Pose & Installation à Domicile</li>
+                <li><i class="fas fa-check-circle"></i> Réparation Express (iPhone, Samsung, Oppo, Vivo...)</li>
+                <li><i class="fas fa-check-circle"></i> Mora sy Azo Antoka</li>
+            </ul>
+        </div>
 
-<!-- Open Graph ho an'ny Facebook sy WhatsApp -->
-<meta property="og:title" content="Richard GSM - Vente Écran & Réparation Mobile">
-<meta property="og:description" content="Écran sy Tactile Original, Pose à Domicile, Réparation Express.">
-<meta property="og:type" content="website">
-<title>Richard GSM - Vente Écran, Tactile & Réparation Mobile</title>
-<meta name="description" content="Vente écran sy tactile original ho an'ny iPhone, Samsung, Oppo, Vivo, Redmi. Pose sy installation à domicile amin'ny vidiny mora sy azo antoka.">
-<meta name="keywords" content="Richard GSM, ecran samsung, ecran iphone, reparation telephone, tactile, Madagascar">
+        <!-- CONTACT BOX -->
+        <div class="contact-box">
+            <p><strong>Mila fanazavana na hanafatra écran?</strong><br>Tsindrio ny bokotra ambany hametrahana resaka amin'ny WhatsApp.</p>
+        </div>
 
-<!-- Open Graph ho an'ny Facebook sy WhatsApp -->
-<meta property="og:title" content="Richard GSM - Vente Écran & Réparation Mobile">
-<meta property="og:description" content="Écran sy Tactile Original, Pose à Domicile, Réparation Express.">
-<meta property="og:type" content="website"
+        <!-- BOKOTRA FIFANDRAISANA -->
+        <a href="https://wa.me/261347906161" class="btn btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> Hanafatra amin'ny WhatsApp
+        </a>
+
+        <a href="https://www.facebook.com/richardgsm.777mada" class="btn btn-facebook" target="_blank">
+            <i class="fab fa-facebook"></i> Tsidiho ny Facebook-nay
+        </a>
+
+        <div class="footer">
+            © Richard GSM - Tehirizina ny zo rehetra.
+        </div>
+    </div>
+
+</body>
+</html>
